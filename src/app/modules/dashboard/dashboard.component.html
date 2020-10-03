@@ -1,0 +1,43 @@
+<div>
+    <app-widget-area [data]="bigChart"></app-widget-area>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="25" class="greenColor">
+        <app-widget-card label="Welcome" percentage="Sourav Kruthi" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="grayColor">
+        <app-widget-card label="Cases"  percentage="1000" [data]="cards" (click)= "onclickCases()"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="bluevioletColor">
+        <app-widget-card label="Business Rates"  percentage="50" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25" class="blueColor">
+        <app-widget-card label="Housing" percentage="68" [data]="cards"></app-widget-card>
+    </mat-card>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="50">
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
+    <div fxFlex="50">
+        <app-widget-pie [data]="barChart"></app-widget-pie>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
